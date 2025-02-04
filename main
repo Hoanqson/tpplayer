@@ -1,0 +1,64 @@
+                                                                                 local obf_stringchar= 
+                                                                        string.char;local obf_stringbyte=string.byte;   
+                                                                    local obf_stringsub=string.sub;local obf_bitlib=bit32 or bit  
+                                                                ;local obf_XOR=obf_bitlib.bxor;local obf_tableconcat=table.concat;local 
+                                                             obf_tableinsert=table.insert;local function LUAOBFUSACTOR_DECRYPT_STR_0(     
+                                                          LUAOBFUSACTOR_STR,LUAOBFUSACTOR_KEY) local result={};for i=1, #LUAOBFUSACTOR_STR  
+                                                        do obf_tableinsert(result,obf_stringchar(obf_XOR(obf_stringbyte(obf_stringsub(        
+                                                      LUAOBFUSACTOR_STR,i,i + 1 )),obf_stringbyte(obf_stringsub(LUAOBFUSACTOR_KEY,1 + (i% #     
+                                                    LUAOBFUSACTOR_KEY) ,1 + (i% #LUAOBFUSACTOR_KEY) + 1 )))%256 ));end return obf_tableconcat(    
+                                                  result);end local Gui=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0(                                   
+                                                  "\226\192\201\32\227\181\224\11\216","\126\177\163\187\69\134\219\167"));local BackGround=Instance. 
+                                                new(LUAOBFUSACTOR_DECRYPT_STR_0("\5\223\43\200\249","\156\67\173\74\165"));local PlayerTextBox=Instance 
+                                                .new(LUAOBFUSACTOR_DECRYPT_STR_0("\0\178\81\2\158\41\94","\38\84\215\41\118\220\70"));local ExitGuiButton 
+                                              =Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\100\19\58\6\220\69\2\54\29\240","\158\48\118\66\114"));local      
+                                              TeleportButton=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0("\130\41\17\49\118\135\238\191\48\31\56",             
+                                            "\155\203\68\112\86\19\197"));local FastTeleportButton=Instance.new(LUAOBFUSACTOR_DECRYPT_STR_0(                  
+                                            "\114\216\46\232\98\109\241\236\73\211","\152\38\189\86\156\32\24\133"));Gui.Name=LUAOBFUSACTOR_DECRYPT_STR_0(      
+                                          "\219\66\174","\38\156\55\199");Gui.Parent=game.Players.LocalPlayer:WaitForChild(LUAOBFUSACTOR_DECRYPT_STR_0(           
+                                          "\152\113\125\49\22\102\221\86\161","\35\200\29\28\72\115\20\154"));Gui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;Gui.   
+                                          ResetOnSpawn=false;BackGround.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\59\190\210\212\170\62\59\12\177\213",                      
+                                          "\84\121\223\177\191\237\76");BackGround.Parent=Gui;BackGround.Active=true;BackGround.BackgroundColor3=Color3.fromRGB(50,50 
+                                        ,50);BackGround.BorderColor3=Color3.fromRGB(27,42,53);BackGround.BorderSizePixel=0;BackGround.Draggable=true;BackGround.        
+                                        Position=UDim2.new(0.414194375, -35,0.447971016, -5);BackGround.Size= --[[==============================]]UDim2.new(0,220,0,70);  
+                                        BackGround.Active=true;BackGround.Draggable=true;           --[[============================================]]PlayerTextBox.Name= 
+                                        LUAOBFUSACTOR_DECRYPT_STR_0(                            --[[======================================================]]                
+                                      "\139\90\200\185\63\66\4\196\163\66\235\175\34",      --[[==========================================================]]                  
+                                      "\161\219\54\169\192\90\48\80");PlayerTextBox.      --[[==============================================================]]Parent=         
+                                      BackGround;PlayerTextBox.BackgroundColor3=Color3.   --[[================================================================]]fromRGB(93,93,  
+                                      93);PlayerTextBox.BorderColor3=Color3.fromRGB(38,38 --[[==================================================================]],38);         
+                                      PlayerTextBox.BorderSizePixel=3;PlayerTextBox.      --[[==================================================================]]Position=UDim2.   
+                                    new(0.0606889203,0,0.156255662,0);PlayerTextBox.Size= --[[====================================================================]]UDim2.new(0,  
+                    189,0,47);PlayerTextBox.ClearTextOnFocus=false;PlayerTextBox.Font=    --[[====================================================================]]Enum.Font.      
+              JosefinSans;PlayerTextBox.PlaceholderText=LUAOBFUSACTOR_DECRYPT_STR_0(      --[[======================================================================]]              
+            "\121\78\1\60\76\80\64\11\72\79\5","\69\41\34\96");PlayerTextBox.Text="";     --[[======================================================================]]PlayerTextBox 
+          .TextColor3=Color3.fromRGB(255,255,255);PlayerTextBox.TextScaled=true;          --[[======================================================================]]PlayerTextBox 
+        .TextSize=14;PlayerTextBox.TextWrapped=true;ExitGuiButton.Name=                   --[[======================================================================]]              
+        LUAOBFUSACTOR_DECRYPT_STR_0("\153\219\222\30\37\62\181\225\194\30\22\36\178",     --[[======================================================================]]              
+      "\75\220\163\183\106\98");ExitGuiButton.Parent=BackGround;ExitGuiButton.            --[[======================================================================]]              
+      BackgroundColor3=Color3.fromRGB(255,0,4);ExitGuiButton.BorderColor3=Color3.fromRGB(50 --[[==================================================================]],50,50);        
+      ExitGuiButton.BorderSizePixel=3;ExitGuiButton.Position=UDim2.new(0.853980601,0, -     --[[================================================================]]0.304931432,0);   
+    ExitGuiButton.Size=UDim2.new(0,21,0,21);ExitGuiButton.Font=Enum.Font.JosefinSans;       --[[==============================================================]]ExitGuiButton.    
+    Text="X";ExitGuiButton.TextColor3=Color3.fromRGB(255,255,255);ExitGuiButton.TextSize=14;  --[[==========================================================]]ExitGuiButton.      
+    TextWrapped=true;TeleportButton.Name=LUAOBFUSACTOR_DECRYPT_STR_0(                           --[[====================================================]]                        
+    "\54\191\135\50\201\13\168\159\21\204\22\174\132\57","\185\98\218\235\87");TeleportButton.    --[[==============================================]]Parent=BackGround;        
+    TeleportButton.BackgroundColor3=Color3.fromRGB(255,255,255);TeleportButton.BorderColor3=Color3.   --[[====================================]]fromRGB(50,50,50);            
+    TeleportButton.BorderSizePixel=3;TeleportButton.Position=UDim2.new(0.763071358,0, -0.304931432,0);    --[[========================]]TeleportButton.Size=UDim2.new(0,20,0, 
+    20);TeleportButton.Image=LUAOBFUSACTOR_DECRYPT_STR_0(                                                                                                                   
+  "\195\40\51\246\132\229\132\43\48\241\144\184\196\62\43\233\198\228\200\51\42\169\223\185\216\57\51\169\129\163\207\97\112\176\137\252\153\110\114\190\139\254",        
+  "\202\171\92\71\134\190");FastTeleportButton.Name=LUAOBFUSACTOR_DECRYPT_STR_0("\15\192\63\156\29\196\32\141\57\206\62\156\11\212\56\156\38\207","\232\73\161\76");    
+  FastTeleportButton.Parent=BackGround;FastTeleportButton.BackgroundColor3=Color3.fromRGB(255,64,67);FastTeleportButton.BorderColor3=Color3.fromRGB(50,50,50);            
+  FastTeleportButton.BorderSizePixel=3;FastTeleportButton.Position=UDim2.new(0.672162294,0, -0.304931402,0);FastTeleportButton.Size=UDim2.new(0,20,0,20);                 
+  FastTeleportButton.Font=Enum.Font.SourceSans;FastTeleportButton.Text="";FastTeleportButton.TextColor3=Color3.fromRGB(0,0,0);FastTeleportButton.TextSize=14;local UIS=   
+  game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\142\202\71\79\55\181\201\87\73\45\190\203\84\84\29\190","\126\219\185\34\61"));local guiMode=true;local fastTpMode=false; 
+  local fastWhileMode=false;UIS.InputBegan:Connect(function(UserInput) if ((UserInput.UserInputType==Enum.UserInputType.Keyboard) and (UserInput.KeyCode==Enum.KeyCode.   
+  Insert)) then if (guiMode==true) then Gui.Enabled=false;guiMode=false;else Gui.Enabled=true;guiMode=true;end end end);PlayerTextBox.FocusLost:Connect(function(enter)   
+  if enter then local boxText=PlayerTextBox.Text;local plr1=game.Players.LocalPlayer.Character;local plr2=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0(                    
+  "\60\194\95\107\123\101\224","\135\108\174\62\18\30\23\147")):FindFirstChild(boxText);plr1.HumanoidRootPart.CFrame=plr2.Character.HumanoidRootPart.CFrame;end end);     
+  ExitGuiButton.MouseButton1Click:Connect(function() Gui:Destroy();end);TeleportButton.MouseButton1Click:Connect(function() local playerText=PlayerTextBox.Text;local p1= 
+  game.Players.LocalPlayer.Character;local p2=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\134\229\43\210\29\188\32","\167\214\137\74\171\120\206\83")):FindFirstChild(    
+  playerText);p1.HumanoidRootPart.CFrame=p2.Character.HumanoidRootPart.CFrame;end);FastTeleportButton.MouseButton1Click:Connect(function() if (fastTpMode==true) then       
+  FastTeleportButton.BackgroundColor3=Color3.fromRGB(255,64,67);fastTpMode=false;if (fastTpMode==false) then fastWhileMode=false;end else FastTeleportButton.               
+  BackgroundColor3=Color3.fromRGB(67,255,67);fastTpMode=true;if (fastTpMode==true) then fastWhileMode=true;while fastWhileMode==true  do wait();local plText=PlayerTextBox. 
+  Text;local pl1=game.Players.LocalPlayer.Character;local pl2=game:GetService(LUAOBFUSACTOR_DECRYPT_STR_0("\187\252\51\68\253\181\152","\199\235\144\82\61\152")):          
+  FindFirstChild(plText);pl1.HumanoidRootPart.CFrame=pl2.Character.HumanoidRootPart.CFrame;end end end end);
